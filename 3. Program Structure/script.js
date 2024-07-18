@@ -115,3 +115,104 @@ for (c = 20; ; c++) {
     break;
   }
 } //21
+
+//For counter += 1 and counter -= 1, there are even shorter equivalents: counter++ and counter--.
+
+/*
+switch (prompt('What is the weather like?')) {
+  case 'rainy':
+    console.log('Remember to bring an umbrella.');
+    break;
+  case 'sunny':
+    console.log('Dress lightly.');
+  //no break means 'sunny' triggers both replies - Dress lightly & Go outside.
+  //'cloudy' just triggers - Go outside.
+  case 'cloudy':
+    console.log('Go outside.');
+    break;
+  default:
+    console.log('Unknown weather type!');
+    break;
+}
+
+let accountBalance = calculateBalance(account);
+//It's a green hollow where a river sings
+accountBalance.adjust();
+//Madly catching white tatters in the grass.
+let report = new Report();
+//Where the sun on the proud mountain rings:
+addToReport(accountBalance, report);
+//It's a little valley, foaming like light in a glass.
+*/
+
+/*
+I first found this number scrawled on the back of an old notebook.
+Since then, it has often dropped by, showing up in phone numbers and the serial numbers of products that I've bought. It obviously likes me, so I've decided to keep it.
+*/
+const myNumber = 1110;
+
+// //Looping a triangle
+
+// for (tri = '#'; tri.length <= 7; tri += '#') {
+//   console.log(tri);
+// }
+
+// //FizzBuzz
+
+// for (i = 1; i <= 30; i++) {
+//   let output = '';
+//   if (i % 3 == 0) output += 'Fizz';
+//   if (i % 5 == 0) output += 'Buzz';
+//   console.log(output || i);
+// }
+
+// //ChessBoard
+
+// let size = 8;
+
+// let board = '';
+
+// for (y = 0; y < size; y++) {
+//   for (x = 0; x < size; x++) {
+//     if ((x + y) % 2 == 0) {
+//       board += ' ';
+//     } else {
+//       board += '#';
+//     }
+//   }
+//   board += '\n';
+// }
+
+// console.log(board);
+
+//Looping a triangle
+
+for (tri = '#'; tri.length <= 7; tri += '#') {
+  console.log(tri);
+}
+
+//FizzBuzz
+
+for (i = 1; i <= 30; i++) {
+  let output = '';
+  if (i % 3 == 0) output += 'Fizz';
+  if (i % 5 == 0) output += 'Buzz';
+  console.log(output || i);
+}
+
+//ChessBoard
+
+let size = 8;
+let board = '';
+
+for (let i = 1; i <= size; i++) {
+  for (let t = 1; t <= size; t++) {
+    if ((t + i) % 2 == 0) {
+      board += ' ';
+    } else {
+      board += '#';
+    }
+  }
+  board += '\n';
+}
+console.log(board);
