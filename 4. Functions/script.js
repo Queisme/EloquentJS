@@ -113,3 +113,12 @@ console.log(roundTo(4.5, 2)); //4
 console.log('C', 'O', 2); // C O 2
 
 // Closure
+
+function multiplier(factor) {
+  return (number) => number * factor;
+}
+
+let twice = multiplier(2);
+console.log(twice(5)); //10
+
+//Recursive - a function that calls itself
